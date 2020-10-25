@@ -7,7 +7,7 @@ import org.bson.types.ObjectId
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 
-class JwtUser(
+data class JwtUser(
         val id: ObjectId,
         val email: String,
         @JsonIgnore

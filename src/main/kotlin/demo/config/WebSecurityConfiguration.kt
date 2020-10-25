@@ -44,12 +44,12 @@ class WebSecurityConfiguration : WebSecurityConfigurerAdapter() {
 
 
     @Bean
-    override fun authenticationManagerBean(): AuthenticationManager? {
+    override fun authenticationManagerBean(): AuthenticationManager {
         return super.authenticationManagerBean()
     }
 
     @Bean
-    fun passwordEncoder(): PasswordEncoder? {
+    fun passwordEncoder(): PasswordEncoder {
         return BCryptPasswordEncoder()
     }
 
